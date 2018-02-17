@@ -1,0 +1,34 @@
+\newcommand{\cvkeyline}[3]{%
+    \raisebox{-.3em}{\tcbox[
+    	top=0em,
+    	left=0em,
+    	right=0em,
+    	bottom=0em,
+    	boxrule=0em,
+    	colback=#1,
+    	colupper=white,
+    	nobeforeafter,
+    	center title
+    ]{\footnotesize\bfseries #2}} #3
+  \vspace{.25em}
+}
+
+\newcommand{\cvicon}[2]{%
+  \textcolor{#1}{#2}%
+}
+
+\newcommand{\cvtag}[2]{%
+  \raisebox{-.3em}{\tcbox[
+    top=0em,
+    left=0em,
+    right=0em,
+    bottom=0em,
+    boxrule=0em,
+    colback=#1,
+    colupper=white,
+    nobeforeafter,
+    center title
+  ]{\footnotesize\bfseries #2}}
+}
+\newcommand{\csharp}{{\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+\newcommand\cplusplus{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
